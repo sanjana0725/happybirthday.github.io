@@ -1,0 +1,413 @@
+<html lang="en">
+    <head>
+        <title>Happy Birthday Idiot</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+      
+    </head>
+
+    <body>
+
+   
+        <div class="container">
+            <div class="row">
+                <h2 style="text-align:center;
+     text-shadow: 2px 5px 5px red;"> Happy Birthday Idiot </h2><br>
+               
+            </div>
+        
+
+<div class="row">
+  <div class="column">
+    <img src="08.jpg" style="width: 250px;" height="300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="10.jpg" style="width: 250px;" height="300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="20.jpg" style="width: 250px;" height="300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="28.jpg" style="width: 250px;" height="300px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="08.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="20.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="28.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="08.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="10.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="20.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="28.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="container " >
+    <div class="row">
+      <div class="col-sm-4">
+        <h3 style="font-size: 30px; font-weight: bold; color: black;"><center>Crazy </center> </h3>
+        <p> <center>You are now 21 but behave like you are 12.<br> Thora apna bchpana kum kr. <br> </center></p>
+
+        <center> <img src="16.jpg" width="250px" height="270px"> </center>
+        
+      </div>
+      <div class="col-sm-4">
+        <h3 style="font-size: 30px; font-weight: bold; color: black;"><center>Dumbo </center></h3>
+        <p><center>You are really such a Mad girl. <br> abhi bhi whi bacho wala pagalpn bhara h. </center></p>
+
+        <center> <img src="11.jpg" width="250px" height="270px"> </center>
+
+      </div>
+      <div class="col-sm-4">
+        <h3 style="font-size: 30px; font-weight: bold; color: black;"><center>Moto </center></h3>        
+        <p><center>Thori plti ho idiot bhut moti ho gyi din bher khane ko bol do bs.</center></p>
+
+        <center> <img src="07.jpg" width="250px" height="270px"> </center>
+ 
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <br><br><br><br>
+  <div class="container">
+  <div class="bgimg-1">
+      <div class="caption">
+      <span class="border">
+        friendship is always a sweet responsibility, never an opportunity. <br>
+        
+      </span>
+      </div>
+    </div>
+  
+    
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center; color: black; font-style: italic; font-size: 25px;"> BFF </h3>
+      <p style="color: black;">wese jb apni friendship hui thi tb mujhe lga nhi tha ki tu itni ladaku ya itni itrau h nhi to m tujhse dosti hi nhi krti.pta nhi kya hi din tha jb apni friendship hui thi, wese tere liye to thik hi hoga teri baate jo m sun leti ek baar m, lakin koi mujhse bhi pucho kese handel krti m isko, ek kaam krne ko bolo nhi isko dari duniya h bhane yaad aa jate, clg k liye humesha late krati, canteen m bhi jayegi to iski shrt rehti tu khuch khilayegi to hi jati m nhi to canteen bhi nhi jati, pr jesa bhi tha thik tha yr wo sb ab to ghar pr h to whi sb yaad aa rha, lakin iska mtlb ye nhi ki m teko miss kr rhi teko to bilkul bhi miss nhi krti m idiot.</p>
+    </div>
+  
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="03.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>sirf khane ko bol do bs, lakin khud kbhi treat nhi degi, m to bs wait hi krti kb bhumika maiko khud se bole ki chal sanju aaj party meri tr se. <br><br>#waiting_for_that_day </h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="10.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>Din bher bs Photos click krne ko bolo isko.<br>
+                        photo click kre wo thik h lakin ache photo click krne chahiye yha to ek bhi photo acha nhi aata bhi.<br><br> #pagal_ldki</h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="01.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>are ye kese bhul gyi iska favorite cricket Match dekhna, <br> jaan jaye pr cricket na jaye <br> aisa wala seen rehta iske sath match k time pr to, kisi se baat nhi krti alg hi duniya m phuch jati bs <br> #cricket_lover</h4><br><br><br><br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <br><br><br><br>
+    
+    
+    
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="25.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4> Bs College m sone ka bol do free lecture milte hi bs sanju chl hostel pr sona h maiko bhut neend aa rhi h.<br> itna continue din bher kon ho skta h bhai <br><br> #aalsi </h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="11.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>agr by chance m bolu ki bhumika aaj canteen m treat teri trf se tb to bs canteen se ya to maar khake aana h nhi to wha k bartan saaf krke aana pdega <br><br> #idiot</h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="26.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>ek problem or madam k sath na to koi ldke se jmti or na kisi se patti, ek bhi aise bnda nhi hoga jo bol de bhumika se ladai nhi hui meri hr bnde se panga leke rekha h. <br><br> #ladaku  </h4><br><br><br><br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <br><br><br><br>
+    
+    
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="24.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>Is baar phir tera birthday ghar pr hi rehne wala. pta nhi ghar walo ko is baar bhi kitna preshan krne waki. wese is baar bhi khud k bday ka cake khud hi bna rhi hogi. <br><br> #2nd_lockdown_wala_birthday</h4>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="07.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4> hostel m bhi din bher pagalpan rehta, idher se udher sbko preshan krti,senior k sath bhi panga rehta, sb kaam ka bolo bs pdne k liye mt bolo  <br><br> 
+                    #dayan </h4>>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <center> <img src="17.jpg" width="250px" height="270px"> </center>
+                  </div>
+                  <div class="flip-box-back">
+                    <h4>Paper k time m series dekhne ka talent wo bhi raat raat bher jaag k puri series dekhna or phir din bher sona ye kaaam bhumika ko bhut ache se jmta. #dumbo </h4>><br><br><br><br>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <br><br><br><br>    <br><br><br><br>
+
+    
+
+
+
+
+    <div class="container">
+        <div class="row" style="color: black; font-size: 35px; text-align: center;"> Something About You </div>
+        <div class="row">
+          <div class="col-sm-6 " style="border: 1px solid black; overflow-y: scroll; height: 400px;">
+            
+            
+            <h2 style="color: black;"><center>Bhukkad ladki</center></h2><br>
+    
+    <img class="sticky" src="27.jpg" alt="Avatar">
+    
+    <p style="margin-left: 240px; margin-top: -250px;"> Wese generally sun h sharing is caring hota h, lakin isse ek chocklate share nhi hoti apni, chocklate kya kuch bhi share nhi hota madam se. or sharing kya yha to mere hi hath se meri chocklate le li jati h or mujhe hi request krna pdta h kya mujhe bhi milegi thori.</p>
+    
+    
+          </div>
+    
+          <div class="col-sm-6 " style="border: 1px solid black; overflow-y: scroll; height: 400px;">
+            
+            
+            <h2 style="color: black;"><center>Ladaku Ladki</center></h2><br>
+    
+    <img class="sticky" src="23.jpg" alt="Avatar">
+    
+    <p style="margin-left: 240px; margin-top: -250px;">normally jb kisi se first time milo to apni best image bnana chahiye lakin yha is case m bhi pura opposite h, samne koi bhi ho apne ko koi lena dena nhi apn apni hi chlane wale , ha agr kisi se apna kaam nikalwana ho to wo bhumika bhut ache se janti us time to samne wale ko 7th cloud pr bhi feel kra skti madam. ladai krne m, non-stop bate krne m sbse aage, din bher sone m bhi sbse aage. Bs madam ko koi kaam mt do phit to aap uske liye bhut ache or agr aapne koi kaam diya usko to to aap pitne k liye ready rho bhai. </p>
+    
+    
+          </div>
+         
+        </div>
+      </div><br><br><br><br>
+
+
+
+
+
+
+
+
+      <div class="container">
+
+        <span class="heading"><h1 style="color: black;"><center> Some Rating for you Idiot  </center> </h1></span>
+ 
+
+
+<h3 ><center>Innocence</center></h3>
+<div class="container">
+  <div class="skills html">30%</div>
+</div>
+
+
+<h3><center>Stubbornness</center></h3>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+
+<h3><center>Trus Worthy</center></h3>
+<div class="container">
+  <div class="skills php">90%</div>
+</div>
+
+<h3><center>Attitude</center></h3>
+<div class="container">
+  <div class="skills js">100%</div>
+</div>
+
+</div>
+<br><br><br>
+
+
+
+
+
+<div id="testimonials" class="section">
+    <div class="container-fluid">
+        <div class="row" >
+         
+         <center> <h2 style="color: blanchedalmond; font-size: 20px; font-style: italic;">Made By "Sanjana Maheshwari "</h2>  </center>
+            
+            
+
+</body>
+</html>
+
+  
+  
