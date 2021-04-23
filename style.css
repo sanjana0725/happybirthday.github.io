@@ -273,7 +273,7 @@
   }
   
   @media only screen and (max-device-width: 1024px) {
-.bgimg-1 {
+.bgimg-4 {
       background-attachment: scroll;
     }
   }
@@ -319,7 +319,7 @@
   }
   
   @media only screen and (max-device-width: 1024px) {
-.bgimg-1 {
+.bgimg-3 {
       background-attachment: scroll;
     }
   }
@@ -381,7 +381,7 @@ img.sticky {
   }
   
   @media only screen and (max-device-width: 1024px) {
-.bgimg-1 {
+.bgimg-2 {
       background-attachment: scroll;
     }
   }
